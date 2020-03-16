@@ -1,0 +1,55 @@
+<div class="container" id="badgeTitle">
+  <div class="row" style="margin-left: 2px !important;">
+    <div class="col-sm-0">
+      <img id="imgLeague" src="https://raw.githubusercontent.com/christianvajgel/HeroIT_assets/master/img/badge_icon_75px.png?token=AJKSRXGPWDJXFKXXLQSTC4S6PCZ3G"
+           height="50"
+           width="50"
+           alt="hero badge icon"/>
+    </div>
+    <div class="col-sm titleForm">
+      <h2>The League</h2>
+    </div>
+  </div>
+
+  <div>
+    <table class="table table-warning table-borderless" id="tableLeague">
+      <thead>
+      <tr class="bg-warning">
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Power</th>
+        <th scope="col">Universe</th>
+        <th scope="col">Creation Date</th>
+        <th scope="col">Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="tableStyle" *ngFor="let hero of heroes">
+        <th scope="row">{{ hero.id }}</th>
+        <td>{{ hero.name }}</td>
+        <td>{{ hero.power }}</td>
+        <td>{{ hero.universe }}</td>
+        <td>{{ hero.creationDate }}</td>
+        <td><button class="badge badge-danger buttonTable">Delete</button></td>
+      </tr>
+
+<!--      <tr class="tableStyle">-->
+<!--        <th scope="row">2</th>-->
+<!--        <td>S2</td>-->
+<!--        <td>Coffee Deploy</td>-->
+<!--        <td>Trainee Comics</td>-->
+<!--        <td>10/03/2020</td>-->
+<!--        <td><button class="badge badge-danger buttonTable">Delete</button></td>-->
+<!--      </tr>-->
+<!--      <tr class="tableStyle">-->
+<!--        <th scope="row">3</th>-->
+<!--        <td>S3</td>-->
+<!--        <td>Double Braces</td>-->
+<!--        <td>Others</td>-->
+<!--        <td>11/03/2020</td>-->
+<!--        <td><button class="badge badge-danger buttonTable">Delete</button></td>-->
+<!--      </tr>-->
+      </tbody>
+    </table>
+  </div>
+</div>

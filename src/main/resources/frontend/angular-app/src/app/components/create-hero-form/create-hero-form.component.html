@@ -1,0 +1,94 @@
+<div>
+  <div [hidden]="submitted">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-0">
+          <img src="https://raw.githubusercontent.com/christianvajgel/HeroIT_assets/master/img/hero_icon_75px.png?token=AJKSRXANRKOXHPS4NXYDVZC6PCZYM"
+               height="50"
+               width="50"
+               alt="hero icon"/>
+        </div>
+        <div class="col-sm titleForm">
+          <h2>Create your hero!</h2>
+        </div>
+      </div>
+    </div>
+
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text"
+               class="form-control"
+               id="name"
+               placeholder="The super..."
+               required
+               [(ngModel)]="model.name" name="name" trim [trimOnWriteValue]="false">
+        <div [hidden]="model.name"
+             class="alert alert-warning">
+          The Super WHO?!
+        </div>
+        <small id="nameHelp"
+               class="form-text text-muted">
+                  Fair warning: Super hero names cannot be changed. Keep calm and be a hero!
+        </small>
+      </div>
+
+      <div class="form-group">
+        <label for="powerSelect">Power</label>
+        <select class="form-control"
+                id="powerSelect"
+                required
+                [(ngModel)]="model.power" name="power">
+          <option disabled>Secret power</option>
+          <option *ngFor="let pow of powers" [value]="pow">{{ pow }}</option>
+        </select>
+        <div [hidden]="model.power"
+             class="alert alert-warning">
+          If your hero doesn't have a power, therefore he is not a hero!
+        </div>
+        <small id="powerHelp" class="form-text text-muted">Don't worry we have a strictly privacy policy and we'll never
+          share your super hero power with anyone else. It will
+          be like Superman... nobody knows he is a journalist on his
+          free time.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="universeSelect">Universe</label>
+        <select class="form-control"
+                id="universeSelect"
+                required
+                [(ngModel)]="model.universe" name="universe">
+          <option disabled>Universes</option>
+          <option *ngFor="let uni of universes" [value]="uni">{{ uni }}</option>
+        </select>
+        <div [hidden]="model.universe"
+             class="alert alert-warning">
+          The universe has a lot of places to come from, please choose a one!
+        </div>
+        <small id="universeHelp" class="form-text text-muted">Choose wisely.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="creationDate">Creation date</label>
+        <input type="date"
+               class="form-control"
+               id="creationDate"
+               max=""
+               placeholder="Your hero started saving the IT department on..."
+               required
+               [(ngModel)]="model.creationDate" name="creationDate">
+        <div [hidden]="model.creationDate"
+             class="alert alert-warning">
+          Don't be shy... superheroes doesn't get old!
+        </div>
+        <small
+          id="creationDateHelp"
+          class="form-text text-muted">Let's choose a memorable creation date for your super hero, we know he did not fall from the sky or came from the future.</small>
+      </div>
+
+      <button type="submit" class="btn btn-outline-warning">Create!</button>
+      <button type="button" class="btn btn-outline-danger" id="buttonReset" (click)="newHero(); heroForm.reset()">New Hero</button>
+
+    </form>
+  </div>
+</div>

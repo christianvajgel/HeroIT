@@ -1,0 +1,14 @@
+.tableElement {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0 !important;
+}
+
+#mainDiv {
+  text-align: center;
+  margin-top: -40px !important;
+}
+
+#mainLogo {
+  margin-top: 15px;
+}

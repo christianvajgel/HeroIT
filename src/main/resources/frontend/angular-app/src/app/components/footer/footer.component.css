@@ -1,0 +1,23 @@
+#navbarFooterFlex {
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #797878;
+  padding: 0 !important;
+}
+
+#githubLogo {
+  margin-left: 20px;
+}
+
+#githubLogo:hover {
+  transform: scale(1.06);
+}
+
+#linkedinLogo {
+  margin-right: 20px;
+}
+
+#linkedinLogo:hover {
+  transform: scale(1.06);
+}

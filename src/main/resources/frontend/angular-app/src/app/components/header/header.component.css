@@ -1,0 +1,33 @@
+.navbarText {
+  display: flex;
+  color: white;
+  padding: 10px;
+}
+
+#logoHome {
+  margin-top: 10px !important;
+  display: flex;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+#navbarFlex {
+  align-items: baseline;
+  justify-content: space-between;
+  background-color: #ffc107;
+  padding: 0 !important;
+}
+
+.sloganNavbar {
+  font-size: 20px;
+  margin-top: -30px !important;
+  margin-right: 10px;
+}
+
+#homeLink {
+  color: white;
+}
+
+#homeLink:hover{
+  text-decoration: none;
+}

@@ -1,0 +1,20 @@
+.titleForm {
+  margin-top: 5px;
+}
+
+#badgeTitle {
+  margin-top: -5px;
+}
+
+.alert {
+  margin-bottom: 1px;
+  height: 30px;
+  line-height:30px;
+  padding:0px 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#buttonReset {
+  margin-left: 10px;
+}

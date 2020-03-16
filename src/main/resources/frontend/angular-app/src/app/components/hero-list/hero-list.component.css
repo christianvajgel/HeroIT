@@ -1,0 +1,33 @@
+.titleForm {
+  margin-top: 3px;
+}
+
+#badgeTitle {
+  margin-top: 25px;
+}
+
+#tableLeague {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.tableStyle {
+
+}
+
+.tableStyle:hover {
+  color: #F8F8FF;
+  background-color: #797878;
+}
+
+.buttonTable {
+  background-color: #ffeeba;
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.buttonTable:hover {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}

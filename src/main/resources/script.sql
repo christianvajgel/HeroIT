@@ -1,0 +1,28 @@
+-- The same schema created on MySQL Workbench
+-- Coded added in the project as requested
+
+-- CREATE TABLE `heroes` (
+--   `id` int NOT NULL AUTO_INCREMENT,
+--   `heroName` varchar(45) NOT NULL,
+--   `power` varchar(45) NOT NULL,
+--   `universe` varchar(45) NOT NULL,
+--   `creationDate` varchar(45) NOT NULL,
+--   `deleted` int DEFAULT '0',
+--   PRIMARY KEY (`id`)
+-- ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+--
+--
+-- CREATE TABLE `powers` (
+--   `id` int NOT NULL AUTO_INCREMENT,
+--   `power` varchar(45) NOT NULL,
+--   `deleted` int NOT NULL DEFAULT '0',
+--   PRIMARY KEY (`id`)
+-- ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+--
+--
+-- CREATE TABLE `universes` (
+--   `id` int NOT NULL AUTO_INCREMENT,
+--   `universe` varchar(45) NOT NULL,
+--   `deleted` int NOT NULL DEFAULT '0',
+--   PRIMARY KEY (`id`)
+-- ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
