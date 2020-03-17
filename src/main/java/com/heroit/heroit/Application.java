@@ -7,7 +7,6 @@ import com.heroit.heroit.repository.HeroJDBCRepository;
 import com.heroit.heroit.repository.PowerJDBCRepository;
 import com.heroit.heroit.repository.UniverseJDBCRepository;
 import org.slf4j.Logger;
-
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -37,6 +36,8 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
+        /* THESE LINES OF CODE WERE COMMENTED FOR TESTING PURPOSES */
+
 //        logger.info("Inserting -> {}", heroRepository.insert(new Hero("Hero 4", "Power 4", "Universe 4", "14/03/2020")));
 //        logger.info("Inserting -> {}", heroRepository.insert(new Hero("Hero 5", "Power 5", "Universe 5", "14/03/2020")));
 //        logger.info("Inserting -> {}", heroRepository.insert(new Hero("Hero 6", "Power 6", "Universe 6", "14/03/2020")));
@@ -65,11 +66,11 @@ public class Application implements CommandLineRunner {
 //        logger.info("Inserting -> {}", universeRepository.insert(new Universe("UNIVERSE")));
 
 //        logger.info("Update 1 -> {}", heroRepository.insert(new Hero("SUPER", "POWER", "UNIVERSE", "15/03/2020")));
-        logger.info("Delete/Update 2 -> {}", heroRepository.deleteById(2));
+//        logger.info("Delete/Update 2 -> {}", heroRepository.deleteById(2));
 
-        logger.info("All heroes -> {}", heroRepository.findAll().size());
-        logger.info("All powers -> {}", powerRepository.findAll());
-        logger.info("All universes -> {}", universeRepository.findAll());
+//        logger.info("All heroes -> {}", heroRepository.findAll().size());
+//        logger.info("All powers -> {}", powerRepository.findAll());
+//        logger.info("All universes -> {}", universeRepository.findAll());
     }
 
     public static void main(String[] args) {
